@@ -1,0 +1,100 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*add full-width input fields*/
+body{
+	margin: auto;
+	padding: 0;
+}
+	
+input[type=text],
+input[type=password] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 2px solid #ccc;
+	box-sizing: border-box;
+	border-radius: 5px;
+}
+/* set a style for all buttons*/
+
+.signupbtn {
+	padding: 15px 20px;
+	background-color:#0C0;
+	border-radius:15px;
+	color:#FFF;
+	float: left;
+	width: 50%;
+}
+/*set styles for the cancel button*/
+
+.loginbtn {
+	padding: 15px 20px;
+	background-color:#00F;
+	border-radius:15px;
+	color:#FFF;
+	float: left;
+	width: 50%;
+}
+.resetbtn {
+	padding: 15px 20px;
+	background-color:#F00;
+	color:#FFF;
+	border-radius:15px;
+	float: left;
+	width: 50%;
+}
+.logoutbtn {
+	padding: 15px 20px;
+	background-color:#F00;
+	color:#FFF;
+	border-radius:15px;
+	width: 100%;
+}
+
+
+/*add padding to container elements*/
+
+/*.header{
+	width: 100%;
+	height: 80px;
+	background-color: #00F;
+}*/
+
+.container {
+	height: 95vh;
+	padding-left: 400px;
+	padding-right: 400px;
+	padding-top: 50px;
+
+}
+
+.form{
+	padding-top: 5px;
+	padding-left:30px;
+	padding-right:30px;
+	padding-bottom:20px;
+	background: rgba(153, 51, 102, 0.3);
+}
+
+h1{
+	text-align:center;
+}
+/*clear floats*/
+
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+/*styles for cancel button and signup button 
+on extra small screens*/
+
+
+@media screen and (max-width: 300px) {
+	.cancelbtn,
+	.signupbtn {
+		width: 100%;
+	}
+}
